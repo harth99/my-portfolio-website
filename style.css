@@ -76,10 +76,10 @@ body {
 }
 
 .heart {
-    width: 60px;
-    height: 60px;
+    width: 70px;
+    height: 70px;
     background: black;
-    position: relative;
+    position: absolute;
     box-shadow: 0 0 20px black,
                 0 0 60px black;
     transform: rotate(-45deg);
@@ -119,3 +119,35 @@ body {
     top: 0;
     right: -50%;
 }
+
+.wrapper {
+    height: 100vh;
+    /*This part is important for centering*/
+    display: grid;
+    place-items: center;
+    z-index: 2;
+  }
+  
+  .typing-demo {
+    width: 14ch;
+    animation: typing 8s steps(14), blink .5s;
+    animation-iteration-count: infinite;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: 3px solid;
+    font-family: monospace;
+    font-size: 0.9em;
+    color: #f6d59f;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  }
+      
+  @keyframes blink {
+    50% {
+      border-color: transparent
+    }
+  }
