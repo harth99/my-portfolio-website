@@ -76,8 +76,8 @@ body {
 }
 
 .heart {
-    width: 70px;
-    height: 70px;
+    width: 150px;
+    height: 150px;
     background: black;
     position: absolute;
     box-shadow: 0 0 20px black,
@@ -136,7 +136,7 @@ body {
     overflow: hidden;
     border-right: 3px solid;
     font-family: monospace;
-    font-size: 0.9em;
+    font-size: 2em;
     color: #f6d59f;
   }
   
